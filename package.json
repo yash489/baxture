@@ -1,0 +1,26 @@
+{
+  "name": "baxture-user-login-and-registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start:prod": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "start:multi": "npm run build && node dist/start-cluster.js",
+    "test": "mocha tests/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7",
+    "async": "^3.2.4",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "https": "^1.0.0",
+    "node-datetime": "^2.1.2",
+    "uuid": "^9.0.0"
+  },
+  "type": "module"
+}
